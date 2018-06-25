@@ -10,8 +10,10 @@
 /home
 /style
 /patterns
+```
 
 CSS
+``` bash
 /static/css/cdls/core/common.scss
 > /static/css/cdls/core/reset.scss
 > /static/css/cdls/core/layout.scss
