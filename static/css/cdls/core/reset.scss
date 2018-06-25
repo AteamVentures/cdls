@@ -36,22 +36,20 @@ address, em {
     font-style: normal
 }
 
-.cr
-{
-    form, input, select, option, textarea, button{
-        -webkit-appearance: none;
-        -moz-appearance: none;
-        appearance: none;
-        display: inline-block;
-        vertical-align: top;
-        padding: 0;
-        margin: 0;
-        line-height: inherit;
-        border: 0;
-        border-radius: 0;
-        color: inherit;
-        resize: none;
-    }
+
+form.cr, input.cr, select.cr, option.cr, textarea.cr, button.cr{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    display: inline-block;
+    vertical-align: top;
+    padding: 0;
+    margin: 0;
+    line-height: inherit;
+    border: 0;
+    border-radius: 0;
+    color: inherit;
+    resize: none;
 }
 /*
 select::-ms-expand {
