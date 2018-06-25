@@ -1,0 +1,69 @@
+body {
+	line-height: 1;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+blockquote, q {
+	quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Stronger reset */
+* {
+    outline: 0;
+    box-sizing: border-box;
+}
+
+ol, ul {
+    padding: 0;
+    margin: 0;
+}
+
+address, em {
+    font-style: normal
+}
+
+form, input, select, option, textarea, button{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    display: inline-block;
+    vertical-align: top;
+    padding: 0;
+    margin: 0;
+    line-height: inherit;
+    border: 0;
+    border-radius: 0;
+    color: inherit;
+    resize: none;
+}
+/*
+select::-ms-expand {
+    display: none;
+}
+*/
+hr {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    background-color: #000;
+    height: 1px;
+}
+
+a, a:focus, a:hover, a:active {
+    text-decoration: none;
+    color: inherit;
+}

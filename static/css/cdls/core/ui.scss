@@ -1,0 +1,347 @@
+$pane-radius: 2px;
+
+* {
+    // transition: .2s;
+}
+
+select, input {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    -o-appearance: none;
+    appearance: none;
+}
+
+input::-ms-expand,
+select::-ms-expand {
+    display: none;
+}
+
+label {
+    color: $color-text-light;
+    font-size: $fontSize-small;
+    display: block;
+    margin-bottom: .75rem;
+}
+
+
+button{
+    background-color: transparent;
+    background-repeat: no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;
+    outline:none;
+    height: inherit;
+}
+
+a:hover, a:hover span {
+    color: $color-blue-base !important;
+}
+
+.btn {
+    cursor: pointer;
+    border-radius: 1px;
+    transition: background-color 0.3s, color 0.3s;
+    -webkit-transition: background-color 0.3s, color 0.3s;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+}
+
+.btn-default{
+    font-weight: $fontWeight-base;
+    color: $color-text-base;
+    border: 1px solid $color-gray-base;
+    border-radius: 1px;
+    background: #fff;
+    &:hover, &:focus, &:active{
+        border-color: $color-blue-base;
+        background-color: $color-bg-blue;
+    }
+    &:disabled{
+        opacity: 0.5;
+        font-weight: $fontWeight-base;
+        color: $color-text-base;
+        border-color: $color-gray-base;
+        background: none;
+    }
+}
+
+.btn-primary{
+    font-weight: $fontWeight-base;
+    color: $color-text-white;
+    border: 1px solid $color-blue-base;
+    background: $color-blue-base;
+    border-radius: 1px;
+    &:hover, &:focus, &:active{
+        border-color: $color-blue-dark;
+        background: $color-blue-dark;
+        color: $color-text-white !important;
+    }
+    &:disabled{
+        opacity: 0.5;
+        color: rgba(255, 255, 255, 0.5);
+        &:hover {
+            opacity: 0.5;
+            color: rgba(255, 255, 255, 0.5);
+            background-color: $color-blue-base;
+            border: 1px solid $color-blue-base;
+            cursor: not-allowed;
+        }
+    }
+}
+
+.btn-danger{
+    font-weight: $fontWeight-base;
+    color: $color-text-base;
+    border: 1px solid $color-gray-base;
+    background: none;
+
+    &:hover, &:focus, &:active{
+        font-weight: $fontWeight-base;
+        color: $color-text-white;
+        background: $color-red-base;
+    }
+    &:disabled{
+        font-weight: $fontWeight-base;
+        color: $color-text-white;
+        background: $color-red-base;
+    }
+}
+
+
+
+.btn-size-large{
+    font-size : $fontSize-large;
+    min-width: 10rem;
+    padding : 0.938rem 1.875rem;
+}
+
+.btn-size-base{
+    font-size : $fontSize-base;
+    min-width: 7.5rem;
+    padding : .69rem 1rem;
+}
+
+.btn-size-small{
+    font-size : $fontSize-small;
+    min-width: 5.625rem;
+    padding : 0.485rem 0.5rem;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="tel"],
+input[type="email"]{
+    font-size: 1rem;
+    padding: .4375rem .625rem;
+    color: $color-text-base;
+    font-weight: $fontWeight-base;
+
+    &:-webkit-autofill, &:-webkit-autofill:focus {
+    -webkit-box-shadow: 0 0 0 30px white inset;
+    -webkit-text-fill-color: $color-text-base;
+    outline-width: 0 !important;
+    }
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="tel"]:focus,
+input[type="email"]:focus {
+    border: 1px solid $color-blue-base;
+}
+
+.input-normal {
+    background-color: $color-bg-base;
+    border: 1px solid $color-border-base;
+    color: $color-text-base;
+    font-weight: $fontWeight-base;
+    font-size: $fontSize-base;
+    border-radius: 1px;
+}
+
+.dropdown-normal {
+    font-size : $fontSize-base;
+    font-weight : $fontWeight-base;
+    color : $color-text-base;
+    border : 1px solid $color-gray-base;
+    border-radius: 1px;
+    background : none;
+    position: relative;
+    height: 2.5rem;
+    cursor: pointer;
+    .svgIcon{
+        position: absolute;
+        cursor: pointer;
+        right: .5rem;
+        top: .7rem;
+        width: 1em;
+        height: 1em;
+        pointer-events: none;
+    }
+    select {
+        font-size: $fontSize-base;
+        //padding: .6rem 2.5rem 0 .8rem;
+        width: 100%;
+        height: 100%;
+        padding-left: 1.0rem;
+        background-color: $color-bg-white;
+        cursor: pointer;
+    }
+    &:hover {
+        border: 1px solid $color-blue-base;
+        background-color: $color-bg-blue;
+    }
+    &:hover select{
+        background-color: $color-bg-blue;
+    }
+}
+
+.checkbox-normal {
+    input {
+        display: none;
+    }
+    label {
+        display: inline-block;
+        vertical-align: middle;
+        color: $color-text-base;
+        vertical-align: middle;
+        cursor: pointer;
+    }
+    label:before{
+        content: '';
+        width: 1rem;
+        height: 1rem;
+        display: inline-block;
+        border: 1px solid $color-gray-base;
+        border-radius: 1px;
+        background-color: $color-bg-white;
+        margin-bottom: -3px;
+        margin-right: .5rem;
+    }
+    input:checked + label:before {
+        // background-image: url('../../../img/c1/icon-checkbox.svg');
+        background-size: cover;
+        background-position: center center;
+    }
+    label:hover:before,
+    label:focus:before,
+    label:active:before {
+        background-color: $color-gray-light;
+    }
+}
+
+.radio-normal {
+    input {
+        display: none;
+    }
+    label {
+        display: inline-block;
+        vertical-align: middle;
+        color: $color-text-base;
+        vertical-align: middle;
+        cursor: pointer;
+    }
+    label:before{
+        content: '';
+        width: 1rem;
+        height: 1rem;
+        display: inline-block;
+        border: 1px solid $color-gray-base;
+        border-radius: 50%;
+        margin-bottom: -3px;
+        margin-right: .5rem;
+    }
+    input:checked + label:before {
+        // background-image: url('../../../img/c1/icon-radio.svg');
+        background-size: cover;
+        background-position: center center;
+    }
+    label:hover:before,
+    label:focus:before,
+    label:active:before {
+        background-color: $color-gray-light;
+    }
+}
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: $color-text-light;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: $color-text-light;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: $color-text-light;
+}
+:-moz-placeholder { /* Firefox 18- */
+  color: $color-text-light;
+}
+
+
+.table {
+    width: 100%;
+    text-align: left;
+    .thead {
+        display: flex;
+        justify-content: space-between;
+        border-top: 1px solid $color-border-base;
+        border-bottom: 1px solid $color-border-base;
+        background-color: $color-bg-dark;
+        color: $color-text-light;
+        padding: .625rem 1rem;
+        font-size: $fontSize-small;
+    }
+    
+    .tbody .row {
+        display: flex;
+        align-items: center;
+        font-size: $fontSize-base;
+        justify-content: space-between;
+        padding: 2.875rem 1rem;
+        border-bottom: 1px solid $color-border-base;
+        .arrow {
+            color: $color-border-dark;
+        }
+    }
+    
+    .pagination {
+        margin-top: 1rem;
+        text-align: center;
+        li {
+            display: inline-block;
+            width: 1.875rem;
+            height: 1.875rem;
+            line-height: 1.8rem;
+            border-radius: 1px;
+            &.current {
+                background-color: $color-gray-base;
+                font-weight: $fontWeight-bold;
+                color: $color-text-white;                
+                &:hover {
+                    background-color: $color-gray-base;
+                }
+            }
+            &:hover {
+                background-color: $color-bg-dark;
+                a {color: inherit !important;}
+            }
+            a {
+                display: block;
+                width: 100%;
+                height: 100%;
+                cursor: pointer;
+            }
+        }
+    }
+    
+    &.detail {
+        .row:hover {
+            background-color: $color-bg-base;
+            cursor: pointer;
+        }
+    }
+}
+

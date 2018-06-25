@@ -1,0 +1,30 @@
+@import 'reset';
+@import 'layout';
+@import 'colors';
+@import 'text';
+@import 'ui';
+@import 'utils';
+
+* {
+   outline: 0;
+   box-sizing: border-box;
+   line-height: $lineHeight-base;
+   text-decoration: none;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width: 100%;
+    // background: $color-background;
+    font-family: 'Spoqa Han Sans', Helvetica, Arial, sans-serif;
+    font-weight: normal;
+    color: $color-text-base;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
