@@ -1,6 +1,17 @@
 # cdls
 
+> Creatable Design Language System
 > A Vue.js project
+>> 디자인 스타일 가이드와 HTML/CSS 패턴, 목업을 코드로 구현하고 관리하는 프로젝트입니다.
+
+## Design Language System
+
+``` bash
+/home
+/style
+/patterns
+```
+
 
 ## Build Setup
 
