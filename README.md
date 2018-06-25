@@ -19,13 +19,13 @@ Pages
 CSS
 ``` bash
 /static/css/cdls/core/
-common.scss
--- /static/css/cdls/core/reset.scss
--- /static/css/cdls/core/layout.scss
--- /static/css/cdls/core/colors.scss
--- /static/css/cdls/core/text.scss
--- /static/css/cdls/core/ui.scss
--- /static/css/cdls/core/utils.scss
+common.scss : 아래 모든 scss 들을 포함하는 최상위 scss
+-- reset.scss : 기본 css 정의 오버라이드 (.cr 클래스 사용)
+-- layout.scss : Grid System 및 요소 배치와 관련된 정의등
+-- colors.scss : 모든 색 관련 정의
+-- text.scss : 폰트 크기, 줄간 등 정의
+-- ui.scss : input, .btn 등 UI 요소 정의
+-- utils.scss : 그 외 svg 등 요소들에 대한 정의
 ```
 
 
