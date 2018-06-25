@@ -1,4 +1,4 @@
-# cdls
+# CDLS
 
 > Creatable Design Language System
 > A Vue.js project
