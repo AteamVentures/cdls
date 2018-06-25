@@ -4,35 +4,60 @@ $pane-radius: 2px;
     // transition: .2s;
 }
 
-select, input {
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    -ms-appearance: none;
-    -o-appearance: none;
-    appearance: none;
-}
+.cr{
+    select, input {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        -ms-appearance: none;
+        -o-appearance: none;
+        appearance: none;
+    }
 
-input::-ms-expand,
-select::-ms-expand {
-    display: none;
-}
+    input::-ms-expand,
+    select::-ms-expand {
+        display: none;
+    }
 
-label {
-    color: $color-text-light;
-    font-size: $fontSize-small;
-    display: block;
-    margin-bottom: .75rem;
-}
+    label {
+        color: $color-text-light;
+        font-size: $fontSize-small;
+        display: block;
+        margin-bottom: .75rem;
+    }
 
 
-button{
-    background-color: transparent;
-    background-repeat: no-repeat;
-    border: none;
-    cursor:pointer;
-    overflow: hidden;
-    outline:none;
-    height: inherit;
+    button{
+        background-color: transparent;
+        background-repeat: no-repeat;
+        border: none;
+        cursor:pointer;
+        overflow: hidden;
+        outline:none;
+        height: inherit;
+    }
+
+    input[type="text"],
+    input[type="password"],
+    input[type="tel"],
+    input[type="email"]{
+        font-size: 1rem;
+        padding: .4375rem .625rem;
+        color: $color-text-base;
+        font-weight: $fontWeight-base;
+
+        &:-webkit-autofill, &:-webkit-autofill:focus {
+        -webkit-box-shadow: 0 0 0 30px white inset;
+        -webkit-text-fill-color: $color-text-base;
+        outline-width: 0 !important;
+        }
+    }
+
+    input[type="text"]:focus,
+    input[type="password"]:focus,
+    input[type="tel"]:focus,
+    input[type="email"]:focus {
+        border: 1px solid $color-blue-base;
+    }
 }
 
 a:hover, a:hover span {
@@ -129,29 +154,6 @@ a:hover, a:hover span {
     font-size : $fontSize-small;
     min-width: 5.625rem;
     padding : 0.485rem 0.5rem;
-}
-
-input[type="text"],
-input[type="password"],
-input[type="tel"],
-input[type="email"]{
-    font-size: 1rem;
-    padding: .4375rem .625rem;
-    color: $color-text-base;
-    font-weight: $fontWeight-base;
-
-    &:-webkit-autofill, &:-webkit-autofill:focus {
-    -webkit-box-shadow: 0 0 0 30px white inset;
-    -webkit-text-fill-color: $color-text-base;
-    outline-width: 0 !important;
-    }
-}
-
-input[type="text"]:focus,
-input[type="password"]:focus,
-input[type="tel"]:focus,
-input[type="email"]:focus {
-    border: 1px solid $color-blue-base;
 }
 
 .input-normal {
