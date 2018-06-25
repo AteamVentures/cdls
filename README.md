@@ -1,7 +1,9 @@
 # CDLS
 
-> Creatable Design Language System (A Vue.js project)
+> Creatable Design Language System
 >> 디자인 스타일 가이드와 HTML/CSS 패턴, 목업을 코드로 구현하고 관리하는 프로젝트입니다.
+>> vue-webpack-boilerplate 로 제작되었습니다.
+>> https://github.com/vuejs-templates/webpack
 
 ## Design Language System
 
