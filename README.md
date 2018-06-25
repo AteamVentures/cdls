@@ -10,6 +10,15 @@
 /home
 /style
 /patterns
+
+CSS
+/static/css/cdls/core/common.scss
+> /static/css/cdls/core/reset.scss
+> /static/css/cdls/core/layout.scss
+> /static/css/cdls/core/colors.scss
+> /static/css/cdls/core/text.scss
+> /static/css/cdls/core/ui.scss
+> /static/css/cdls/core/utils.scss
 ```
 
 
