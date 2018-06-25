@@ -6,6 +6,7 @@
 
 ## Design Language System
 
+Pages
 ``` bash
 /home
 /style
