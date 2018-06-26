@@ -36,7 +36,8 @@ address, em {
     font-style: normal
 }
 
-form, input, select, option, textarea, button{
+
+form.cr, input.cr, select.cr, option.cr, textarea.cr, button.cr{
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
