@@ -27,3 +27,47 @@ $padding-base:      1rem;
 $padding-large:     1.5rem;
 $padding-larger:    2rem;
 
+
+.padding-v {
+  padding-top: $padding-small;
+  padding-bottom: $padding-small;
+}
+
+.padding-v-lg {
+  padding-top: $padding-base;
+  padding-bottom: $padding-base;
+}
+
+.padding-v-sm {
+  padding-top: $padding-smaller;
+  padding-bottom: $padding-smaller;
+}
+
+.padding-h {
+  padding-left: $padding-base;
+  padding-right: $padding-base;
+}
+
+.padding-t {
+  padding-top: $padding-small;
+}
+
+.padding-t-lg {
+  padding-top: $padding-base;
+}
+
+.padding-b {
+  padding-bottom: $padding-small;
+}
+
+.padding-b-lg {
+  padding-bottom: $padding-base;
+}
+
+.padding-l {
+  padding-left: $padding-base;
+}
+
+.padding-r {
+  padding-right: $padding-base;
+}

@@ -2,10 +2,6 @@ body {
 	line-height: 1;
 }
 
-ol, ul {
-	list-style: none;
-}
-
 blockquote, q {
 	quotes: none;
 }
@@ -28,6 +24,7 @@ table {
 }
 
 ol, ul {
+    list-style: none;
     padding: 0;
     margin: 0;
 }
@@ -68,3 +65,9 @@ a, a:focus, a:hover, a:active {
     text-decoration: none;
     color: inherit;
 }
+
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+

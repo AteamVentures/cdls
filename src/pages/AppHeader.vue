@@ -1,10 +1,20 @@
 <template>
-  <nav class="hello">
-    <b>Creatable Design Language System</b><br/>
-    <router-link class='' :to="{ name: 'Home', params: {}}">Home</router-link> / 
-    <router-link class='' :to="{ name: 'Style', params: {}}">Style</router-link> / 
-    <router-link class='' :to="{ name: 'Patterns', params: {}}">Patterns</router-link>
-  </nav>
+  <div class="container-fluid container-blueBg">
+    <div class="container">
+      <div class="row">
+        <nav class="desktop">
+          <div class="col-6">
+            <b>Creatable Design Language System</b><br/>
+          </div>
+          <div class="col-6 d-flex justify-content-end">
+            <router-link class='' :to="{ path:'/style/colors' }">Style Guide</router-link> / 
+            <router-link class='' :to="{ path:'/patterns' }">Patterns</router-link> /
+            <router-link class='' :to="{ path:'/pages' }">Pages</router-link>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </div>
 </template>
 
 <script>

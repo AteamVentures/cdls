@@ -1,6 +1,10 @@
 <template>
-  <div class="">
-    pattern 입니다.
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        Patterns 
+      </div>
+    </div>
   </div>
 </template>
 

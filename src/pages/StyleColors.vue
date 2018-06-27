@@ -2,26 +2,21 @@
   <div class="container">
     <div class="row">
       <div class="col-12">
-        ㅎㅎㅎㅎㅎ
+        Style Colors
       </div>
     </div>
   </div>
 </template>
 
-
-
-
-
 <script>
 export default {
-  name: 'Home',
+  name: 'StyleColors',
   data () {
     return {
     }
   }
 }
 </script>
-
 
 <style scoped>
 

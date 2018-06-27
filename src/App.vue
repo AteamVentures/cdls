@@ -1,14 +1,14 @@
 <template>
   <div id="app">
     <app-header></app-header>
-    <div id="body-wrapper">
-        <router-view :key="$route.fullPath"></router-view>
-    </div>
+
+    <router-view :key="$route.fullPath"></router-view>
   </div>
 </template>
 
 <script>
 import AppHeader from '@/pages/AppHeader'
+
 export default {
     name: 'App',
     components: {
