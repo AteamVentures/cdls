@@ -10,6 +10,7 @@ import StyleUI from '@/pages/style/ui'
 import Patterns from '@/pages/Patterns'
 
 import Mockup from '@/pages/mockup/index'
+import MockupLogin from '@/pages/mockup/login'
 import MockupAuth from '@/pages/mockup/auth'
 import MockupModal from '@/pages/mockup/modal'
 
@@ -51,6 +52,11 @@ export default new Router({
       path: '/mockup',
       name: 'Mockup',
       component: Mockup
+    },
+    {
+      path: '/mockup/login',
+      name: 'MockupsLogin',
+      component: MockupLogin
     },
     {
       path: '/mockup/auth',

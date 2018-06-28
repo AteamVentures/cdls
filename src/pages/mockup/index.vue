@@ -5,6 +5,7 @@
       <div class="row">
         <div class="col-3 nav-left">
           <h2>Mockup</h2>
+          <router-link class='btn btn-link' :to="{ path:'/mockup/login' }">Login (2018/06/28 11:04)</router-link><br/>
           <router-link class='btn btn-link' :to="{ path:'/mockup/auth' }">Auth</router-link><br/>
           <router-link class='btn btn-link' :to="{ path:'/mockup/modal' }">Modal</router-link><br/>
         </div>
