@@ -22,6 +22,4 @@ export default {
 
 <style lang="scss">
 @import "static/css/cdls/core/common"
-
-
 </style>
