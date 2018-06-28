@@ -1,26 +1,23 @@
 <template>
   <div id="app-wrapper">
-    <app-header></app-header>
 
     <div class="container">
       <div class="row">
-        <div class="col-12">
-          ㅎㅎㅎㅎㅎ
+        <div class="col-3 nav-left">
+          <h2>Mockup</h2>
+          <router-link class='btn btn-link' :to="{ path:'/mockup/auth' }">Auth</router-link><br/>
+          <router-link class='btn btn-link' :to="{ path:'/mockup/modal' }">Modal</router-link><br/>
         </div>
       </div>
     </div>
   </div>
 </template>
 
-
-
-
-
 <script>
 import AppHeader from '@/pages/AppHeader'
 
 export default {
-  name: 'Home',
+  name: 'Style',
   components: {
     AppHeader
   },
@@ -30,7 +27,6 @@ export default {
   }
 }
 </script>
-
 
 <style scoped>
 

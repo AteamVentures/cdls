@@ -4,12 +4,12 @@
       <div class="row">
         <nav class="desktop">
           <div class="col-6">
-            <b>Creatable Design Language System</b><br/>
+            <router-link class='' :to="{ path:'/' }"><b>Creatable Design Language System</b></router-link><br/>
           </div>
           <div class="col-6 d-flex justify-content-end">
             <router-link class='' :to="{ path:'/style/colors' }">Style Guide</router-link> / 
             <router-link class='' :to="{ path:'/patterns' }">Patterns</router-link> /
-            <router-link class='' :to="{ path:'/pages' }">Pages</router-link>
+            <router-link class='' :to="{ path:'/mockup' }">Mockups</router-link>
           </div>
         </nav>
       </div>
