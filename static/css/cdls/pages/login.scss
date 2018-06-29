@@ -1,85 +1,274 @@
+@import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css);
+
+* {
+	font-family: 'Spoqa Han Sans';
+}
+
+body {
+	background-color: #f8fafa;	
+}
+
 .app-container {
-	background-color: #f8fafa;
-	width: 100%;
+}
+
+#app, .container, .row {
 	height: 100%;
 }
 
-.form-component {
-	position: relative;
-	margin-bottom: 12px;
-	&.warning {
-		input {
-			border: 1px solid $color-red-base;
+#register,
+#register-google,
+#register-facebook,
+#login,
+#find-password {
+	margin-bottom: 100px;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*
+	UI Components
+*/
+
+// 회원 폼
+	.form-element {
+		position: relative;
+		margin: 12px auto;
+		.tnc {
+			text-align: center;
+			font-size: 14px;
+			color: #97a4a9;
+			a {
+				color: $color-blue-base;
+				font-weight: 600;
+			}
 		}
 		.message {
-			color: $color-red-base;
+			display: none;
+		}
+		&.warning {
+			input {
+				border: 1px solid $color-red-base;
+			}
+			.message {
+				color: $color-red-base;
+				font-size: 14px;
+				text-align: center;
+				margin-top: 6px;
+				display: block;
+			}
+		}
+		label {
+			position: absolute;
 			font-size: 14px;
-			text-align: center;
-			margin-top: 6px;
+			color: #97a4a9;
+			height: 40px;
+			line-height: 40px;
+			left: 10px;
+		}
+		input {
+			width: 100%;
+			display: block;
+			padding-left: 105px !important;
+			font-size: 16px;
+			height: 40px;
+			border-radius: 1px;
+			font-size: 16px;
+		}
+		select {
+			width: 100%;
+			height: 40px;
+			background-color: #fff;
+			border-radius: 1px;
+			padding-left: 105px;
+			font-size: 16px;
+			color: $color-text-base;
+		}
+		.caret {
+			position: absolute;
+			top:16px;
+			right: 12px;
+			width: 14px;
+			height: 9px;
+			background-image: url('/static/img/arrow-down.png');
+			background-size: cover;
+		}
+		button {
+			width: 100%;
+			background-color: $color-blue-base;
+			padding: 12px 0 12px 0;
+			line-height: 1;
+			color: #fff;
+			font-size: 16px;
+			&.disabled {
+				opacity: .3;
+			}
 		}
 	}
-	label {
-		position: absolute;
+
+
+// 소셜 로그인
+.social-login {
+	.or {
+		&:after {
+			content: '또는';
+			position: absolute;
+			width: 50px;
+			font-size: 12px;
+			left: 50%;
+			background-color: #f8fafa;
+			text-align: center;
+			margin: -10px auto auto -25px;
+			color: #c5d2d6;
+		}
+		width: 100%;
+		height: 1px;
+		background-color: #dae1e6;
+		display: inline-block;
+		margin: 8px auto;
+	}
+	button#facebook {
+		background-color: #4267b2;
 		font-size: 14px;
-		color: #97a4a9;
-		height: 40px;
-		line-height: 40px;
-		left: 10px;
+		span {
+			line-height: 1;
+			&:before {
+				content: '';
+				position: relative;
+				display: inline-block;
+				width: 17px;
+				height: 17px;
+				vertical-align: -3px;
+				margin-right: 10px;
+				background-image: url('/static/img/logo-btn-fb.png');
+				background-size: cover;
+			}
+		}
 	}
-	input {
-		width: 100%;
-		display: block;
-		padding-left: 105px !important;
-		font-size: 16px;
-		height: 40px;
-		border-radius: 1px;
-		font-size: 16px;
-	}
-	select {
-		width: 100%;
-		height: 40px;
+	button#google {
 		background-color: #fff;
-		border-radius: 1px;
-		padding-left: 105px;
-		font-size: 16px;
-		color: $color-text-base;
-	}
-	button {
-		width: 100%;
-		background-color: $color-blue-base;
-		opacity: .3;
-		height: 40px;
-		color: #fff;
-		font-size: 16px;
+		color: #5f696e;
+		font-size: 14px;
+		span {
+			line-height: 1;
+			&:before {
+				content: '';
+				position: relative;
+				display: inline-block;
+				width: 17px;
+				height: 17px;
+				vertical-align: -3px;
+				margin-right: 10px;
+				background-image: url('/static/img/logo-btn-google.png');
+				background-size: cover;
+			}
+		}
 	}
 }
 
-.or {
-	&:after {
-		content: '또는';
-		position: absolute;
-		width: 50px;
-		font-size: 12px;
-		left: 50%;
-		background-color: #f8fafa;
-		text-align: center;
-		margin-left: -25px;
-		margin-top: -10px;
-		color: #c5d2d6;
+// 추가정보
+.additional-info {
+	text-align: center;
+	margin-top: 30px;
+	line-height: 24px;
+	a:after {
+		content: '';
+		position: relative;
+		display: inline-block;
+		width: 8px;
+		height: 12px;
+		margin-left: 5px;
+		background-image: url('/static/img/arrow-right.png');
+		background-size: cover;	
 	}
-	width: 100%;
-	height: 1px;
-	background-color: #dae1e6;
-	display: inline-block;
+	.lost-password {
+		a {
+			font-size: 14px;
+			font-weight: 600;
+		}
+	}
+	.register {
+		span {
+			font-size: 14px;
+			color: #97a4a9;
+			margin-right: 10px;
+		}
+		a {
+			font-size: 14px;
+			font-weight: 600;
+		}
+	}
+	.already {
+		span {
+			font-size: 14px;
+			color: #97a4a9;
+			margin-right: 10px;
+		}
+		a {
+			font-size: 14px;
+			font-weight: 600;
+		}
+	}
+}
+
+// 로고
+.logo {
+	text-align: center;
+	margin-bottom: 35px;
+	img {
+		width: 187px;
+	}
+}
+
+// 심플 헤더
+.simple-header {
+	text-align: center;
+	color: #454f5e;
+	h1 {
+		font-size: 26px;
+		margin-bottom: 16px;
+		&.google-icon {
+			&:before {
+				content: '';
+				position: relative;
+				display: inline-block;
+				width: 26px;
+				height: 26px;
+				vertical-align: -3px;
+				margin-right: 10px;
+				background-image: url('/static/img/logo-title-google.png');
+				background-size: cover;
+			}
+		}
+		&.facebook-icon {
+			&:before {
+				content: '';
+				position: relative;
+				display: inline-block;
+				width: 26px;
+				height: 26px;
+				vertical-align: -3px;
+				margin-right: 10px;
+				background-image: url('/static/img/logo-title-fb.png');
+				background-size: cover;
+			}
+		}
+	}
+	p {
+		font-size: 14px;
+		margin-bottom: 36px;
+	}
 }
 
 
 
-button {
-	width: 100%;
-	background-color: $color-blue-base;
-	opacity: .3;
-	height: 40px;
-	color: #fff;
-	font-size: 16px;
-}
+
+
+
