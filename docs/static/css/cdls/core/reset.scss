@@ -1,0 +1,73 @@
+body {
+	line-height: 1;
+}
+
+blockquote, q {
+	quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Stronger reset */
+* {
+    outline: 0;
+    box-sizing: border-box;
+}
+
+ol, ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+address, em {
+    font-style: normal
+}
+
+
+form.cr, input.cr, select.cr, option.cr, textarea.cr, button.cr{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    display: inline-block;
+    vertical-align: top;
+    padding: 0;
+    margin: 0;
+    line-height: inherit;
+    border: 0;
+    border-radius: 0;
+    color: inherit;
+    resize: none;
+}
+/*
+select::-ms-expand {
+    display: none;
+}
+*/
+hr {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    background-color: #000;
+    height: 1px;
+}
+
+a, a:focus, a:hover, a:active {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
