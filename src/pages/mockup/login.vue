@@ -3,7 +3,7 @@
 		<div class="container">
 			
 			<!-- 회원가입 페이지 -->
-			<div id="register">
+			<div class="stage-wrapper" id="register">
 				<div class="row justify-content-center align-items-center">
 					<div class="col-md-4 col-sm-8 col-xs-12">
 						
@@ -106,7 +106,7 @@
 			
 			
 			<!-- 구글 회원가입 페이지 -->
-			<div id="register-google">
+			<div class="stage-wrapper" id="register-google">
 				<div class="row justify-content-center align-items-center">
 					<div class="col-md-4 col-sm-8 col-xs-12">
 						
@@ -189,7 +189,7 @@
 			
 			
 			<!-- 페이스북 회원가입 페이지 -->
-			<div id="register-facebook">
+			<div class="stage-wrapper" id="register-facebook">
 				<div class="row justify-content-center align-items-center">
 					<div class="col-md-4 col-sm-8 col-xs-12">
 						
@@ -273,7 +273,7 @@
 			
 			
 			<!-- 로그인 페이지 -->
-			<div id="login">
+			<div class="stage-wrapper" id="login">
 				<div class="row justify-content-center align-items-center">
 					<div class="col-md-4 col-sm-8 col-xs-12">
 					
@@ -338,7 +338,7 @@
 			
 			
 			<!-- 비밀번호 찾기 페이지 -->
-			<div id="find-password">
+			<div class="stage-wrapper" id="find-password">
 				<div class="row justify-content-center align-items-center">
 					<div class="col-md-4 col-sm-8 col-xs-12">
 						
