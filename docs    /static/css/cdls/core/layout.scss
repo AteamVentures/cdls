@@ -1,0 +1,69 @@
+
+$zIndex-1:   100;
+$zIndex-2:   200;
+$zIndex-3:   300;
+$zIndex-4:   400;
+$zIndex-5:   500;
+$zIndex-6:   600;
+$zIndex-7:   700;
+$zIndex-8:   800;
+$zIndex-9:   900;
+$zIndex-10: 1000;
+
+
+$zIndex--base:      $zIndex-3;
+$zIndex--dropdown:  $zIndex-4;
+$zIndex--nav:       $zIndex-5;
+$zIndex--overlayBg: $zIndex-6;
+$zIndex--overlay:   $zIndex-7;
+
+$padding-smaller:   0.25rem;
+$padding-small:     0.5rem;
+$padding-base:      1rem;
+$padding-large:     1.5rem;
+$padding-larger:    2rem;
+
+
+.padding-v {
+  padding-top: $padding-small;
+  padding-bottom: $padding-small;
+}
+
+.padding-v-lg {
+  padding-top: $padding-base;
+  padding-bottom: $padding-base;
+}
+
+.padding-v-sm {
+  padding-top: $padding-smaller;
+  padding-bottom: $padding-smaller;
+}
+
+.padding-h {
+  padding-left: $padding-base;
+  padding-right: $padding-base;
+}
+
+.padding-t {
+  padding-top: $padding-small;
+}
+
+.padding-t-lg {
+  padding-top: $padding-base;
+}
+
+.padding-b {
+  padding-bottom: $padding-small;
+}
+
+.padding-b-lg {
+  padding-bottom: $padding-base;
+}
+
+.padding-l {
+  padding-left: $padding-base;
+}
+
+.padding-r {
+  padding-right: $padding-base;
+}
